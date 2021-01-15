@@ -7,5 +7,8 @@ class News(models.Model):
     link = models.URLField(max_length=250, null=True, blank=True)
     image = models.URLField(null=True, blank=True)
 
+    class Meta:
+        verbose_name = 'New'
+
     def __str__(self):
         return self.title
